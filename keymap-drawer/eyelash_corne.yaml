@@ -23,11 +23,11 @@ layers:
   - A
   - A
   - A
-  - {t: H, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: J, h: RGUI}
-  - {t: K, h: RSFT}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, s: ':'}
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: K, h: LGUI}
+  - {t: L, h: RSFT}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '''', s: '"'}
   - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - A
   - {t: '$$mdi:keyboard-esc$$', h: Fn}
@@ -50,54 +50,54 @@ layers:
   - A
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   NUMBER:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   - A
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - A
-  - S
-  - D
-  - F
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: LSFT}
+  - {t: D, h: LGUI}
+  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
   - G
   - A
   - A
   - A
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: K, h: LGUI}
+  - {t: L, h: RSFT}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
   - A
   - A
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - A
+  - {t: '$$mdi:keyboard-esc$$', h: Fn}
+  - {t: '$$mdi:keyboard-esc$$', h: Fn}
   - A
-  - A
-  - A
-  - A
-  - A
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   SYMBOL:
   - $$mdi:keyboard-tab$$
   - Q
