@@ -2,7 +2,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 #include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>                                  &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT                         &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT 
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
