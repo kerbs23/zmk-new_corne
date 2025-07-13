@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - $$mdi:backspace-reverse-outline$$
   - Q
   - W
   - E
@@ -14,22 +14,22 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - A
-  - S
-  - D
-  - F
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: LSFT}
+  - {t: D, h: LGUI}
+  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
   - G
   - A
   - A
   - A
-  - H
-  - J
-  - K
-  - L
+  - {t: H, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: J, h: RGUI}
+  - {t: K, h: RSFT}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - A
+  - {t: '$$mdi:keyboard-esc$$', h: Fn}
+  - {t: '$$mdi:keyboard-esc$$', h: Fn}
   - A
-  - A
-  - A
-  - A
-  - A
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   NUMBER:
   - $$mdi:keyboard-tab$$
   - Q
@@ -141,12 +141,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
+  - {t: A, type: held}
   - A
   - A
   - A
   - A
-  - A
-  - A
+  - {t: A, type: held alternate}
   Fn:
   - $$mdi:keyboard-tab$$
   - Q
@@ -192,7 +192,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - A
   - A
-  - A
-  - A
+  - {t: A, type: held}
+  - {t: A, type: held alternate}
   - A
   - A
