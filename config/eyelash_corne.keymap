@@ -75,10 +75,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp DEL           &kp Q         &kp W        &kp E        &kp R        &kp T       &kp A               &kp Y        &kp U        &kp I        &kp O         &kp P            &kp BSPC
-&kp BSPC          &hml LCTRL A  &hml LSFT S  &hml LGUI D  &hml LALT F  &kp G       &kp A &kp A &kp A   &kp H        &hmr RALT J  &hmr LGUI K  &hmr RSFT L   &hmr RCTRL SEMI  &kp SQT
-&mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp V        &kp B       &kp A &kp A         &kp N        &kp M        &kp COMMA    &kp DOT       &kp FSLH         &caps_word
-                             &lt 2 TAB    &kp A    &lt 3 ESC                                           &lt 3 ESC    &kp A    &lt 2 TAB
+&kp DEL           &kp Q         &kp W        &kp E        &kp R        &kp T       &none               &kp Y        &kp U        &kp I        &kp O         &kp P            &kp BSPC
+&kp BSPC          &hml LCTRL A  &hml LSFT S  &hml LGUI D  &hml LALT F  &kp G       &none &kp A &kp A   &kp H        &hmr RALT J  &hmr LGUI K  &hmr RSFT L   &hmr RCTRL SEMI  &kp SQT
+&mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp V        &kp B       &none &kp A         &kp N        &kp M        &kp COMMA    &kp DOT       &kp FSLH         &caps_word
+                             &lt 1 TAB    &kp A    &lt 2 ESC                                           &lt 2 ESC    &kp A    &lt 1 TAB
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -86,34 +86,25 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp DEL           &kp N1    &kp N2    &kp N3     &kp N4     &kp N5       &kp A              &kp N6        &kp N7       &kp N8       &kp N9       &kp N0    &kp BSPC
-&kp BSPC          &hml LCTRL A  &hml LSFT S  &hml LGUI D  &hml LALT F  &kp G       &kp A &kp A &kp A   &kp H        &hmr RALT J  &hmr LGUI K  &hmr RSFT L   &hmr RCTRL SEMI  &kp SQT
-&kp F1            &kp F2    &kp F3    &kp F4     &kp F5     &kp F6      &kp A &kp A         &kp F7        &kp F8       &kp F9       &kp F10      &kp F11   &kp F12  
-                             &lt 2 TAB    &kp A    &lt 3 ESC                          &lt 3 ESC    &kp A    &lt 2 TAB
+&kp DEL           &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                                  &none              &kp N6        &kp N7       &kp N8       &kp N9       &kp N0    &kp BSPC
+&kp BSPC          &hml LCTRL LBKT  &hml LSFT RBKT  &hml LGUI BSLH  &hml LALT MINUS  &kp EQUAL       &none &kp A &kp A   &kp GRAVE        &hmr RALT J  &hmr LGUI K  &hmr RSFT L   &hmr RCTRL SEMI  &kp SQT
+&kp F1            &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                                  &none &kp A         &kp F7        &kp F8       &kp F9       &kp F10      &kp F11   &kp F12  
+                             &lt 1 TAB    &kp A    &lt 2 ESC                          &lt 2 ESC    &kp A    &lt 1 TAB
             >;
             sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
             display-name = "SYMBOL";
-            bindings =  <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T       &kp A               &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S      &kp D     &kp F  &kp G       &kp A &kp A &kp A   &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp A &kp A         &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                             &kp A    &kp A    &kp A                          &kp A    &kp A    &kp A
-	>;
+            bindings = <
+&kp DEL  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                       &none                         &kp N6        &kp N7       &kp N8       &kp N9       &kp N0    &kp BSPC
+&trans   &trans    &trans    &trans     &trans     &trans                       &none &kp A &kp A             &kp LEFT      &kp DOWN     &kp UP       &kp RIGHT    &kp HOME  &kp END
+&kp RGB_ON  &kp RGB_OFF  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_BRI_UP  &kp C_BRI_DN &none &kp A  &kp PG_UP  &kp PG_DN  &bt SEL 0  &bt SEL 1  &bt SEL 2  &bt SEL 3  &bt SEL 4  &trans
+                             &lt 2 TAB    &kp A    &lt 2 ESC                          &lt 2 ESC    &kp A    &lt 2 TAB
+            >;
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
-            display-name = "Fn";
-            bindings = <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T       &kp A               &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S      &kp D     &kp F  &kp G       &kp A &kp A &kp A   &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp A &kp A         &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                             &kp A    &kp A    &kp A                          &kp A    &kp A    &kp A
-	>;
-            sensor-bindings = <&scroll_encoder>;
-        };
+
     };
 };
