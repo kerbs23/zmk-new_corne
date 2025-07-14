@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Y
   - U
   - I
@@ -20,7 +20,7 @@ layers:
   - {t: D, h: LGUI}
   - {t: F, h: '$$mdi:apple-keyboard-option$$'}
   - G
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - A
   - H
@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - N
   - M
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
-  - A
-  - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - A
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   NUMBER:
   - $$mdi:backspace-reverse-outline$$
   - {t: '1', s: '!'}
@@ -56,7 +56,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -64,15 +64,15 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: LSFT}
-  - {t: D, h: LGUI}
-  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
-  - G
+  - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
+  - {t: ']', h: LSFT, s: '}'}
+  - {t: \, h: LGUI, s: '|'}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
+  - {t: '=', s: +}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - A
-  - A
-  - H
+  - {t: '`', s: '~'}
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: LGUI}
   - {t: L, h: RSFT}
@@ -84,7 +84,7 @@ layers:
   - F4
   - F5
   - F6
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - F7
   - F8
@@ -92,107 +92,58 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
-  - A
-  - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - A
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
   SYMBOL:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - A
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - A
-  - S
-  - D
-  - F
-  - G
-  - A
-  - A
-  - A
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - A
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - {t: A, type: held}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - HOME
+  - END
+  - RGB ON
+  - RGB OFF
+  - $$mdi:volume-high$$
+  - $$mdi:volume-low$$
+  - $$mdi:brightness-5$$
+  - $$mdi:brightness-7$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
-  - A
-  - A
-  - A
-  - {t: A, type: held alternate}
-  Fn:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - A
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - A
-  - S
-  - D
-  - F
-  - G
-  - A
-  - A
-  - A
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - A
-  - A
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - A
-  - A
-  - {t: A, type: held}
-  - {t: A, type: held alternate}
-  - A
-  - A
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PG DN
+  - PG UP
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held alternate}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
