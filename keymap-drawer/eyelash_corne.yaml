@@ -127,12 +127,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - END
-  - RGB ON
-  - RGB OFF
-  - $$mdi:volume-high$$
-  - $$mdi:volume-low$$
-  - $$mdi:brightness-5$$
-  - $$mdi:brightness-7$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - {t: '$$mdi:transfer$$', type: trans}
