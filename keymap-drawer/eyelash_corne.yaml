@@ -127,8 +127,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - END
-  - F1
-  - F2
+  - RGB ON
+  - RGB OFF
   - F3
   - F4
   - F5
