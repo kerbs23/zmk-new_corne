@@ -99,7 +99,7 @@
             bindings = <
 &kp DEL    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                       &none                         &kp N6        &kp N7       &kp N8       &kp N9       &kp N0    &kp BSPC
 &kp BSPC    &hml LCTRL A  &hml LSFT S  &hml LGUI D  &hml LALT F  &kp G       &none &kp A &kp A             &kp LEFT      &kp DOWN     &kp UP       &kp RIGHT    &kp HOME  &kp END
-&kp F1            &kp F2    &kp F3    &kp F4     &kp F5     &kp F6           &none &kp A                   &trans &kp PG_DN &kp PG_UP  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&kp RGB_ON  &kp RGB_OFF  &kp F3    &kp F4     &kp F5     &kp F6  &none &kp A                   &trans &kp PG_DN &kp PG_UP  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
                              &lt 1 TAB    &kp SPACE    &lt 2 ESC                          &lt 2 ESC    &kp SPACE    &lt 1 TAB
             >;
             sensor-bindings = <&scroll_encoder>;
