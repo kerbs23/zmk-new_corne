@@ -110,8 +110,7 @@
 
         mirror_default_layer {
             display-name = "DEFAULT_MIRROR";
-            bindings =     display-name = "QWERTY";
-    bindings = <
+            bindings = <
 &kp BSPC      &kp P           &kp O       &kp I       &kp U        &kp Y       &none               &kp T        &kp R        &kp E        &kp W         &kp Q         &kp DEL
 &kp SQT       &hmr RCTRL SEMI &hmr RSFT L &hmr LGUI K &hmr RALT J  &kp H       &none &kp A &kp A   &kp G        &hml LALT F  &hml LGUI D  &hml LSFT S   &hml LCTRL A  &kp BSPC
 &caps_word    &kp FSLH        &kp DOT     &kp COMMA   &kp M        &kp N       &none &kp A         &kp B        &kp V        &kp C        &kp X         &kp Z         &mt LSHFT RETURN
@@ -122,8 +121,7 @@
 
         mirror_lower_layer {
             display-name = "NUMBER_MIRROR";
-            bindings =     display-name = "QWERTY";
-    bindings = <
+            bindings = <
 &kp BSPC  &kp N0          &kp N9       &kp N8       &kp N7       &kp N6  q &none              &kp N5      &kp N4      &kp N3      &kp N2      &kp N1      &kp DEL
 &kp SQT   &hmr RCTRL SEMI &hmr RSFT L  &hmr LGUI K  &hmr RALT J  &kp GRAVE &none &kp A &kp A  &kp EQUAL   &hml LALT MINUS &hml LGUI BSLH &hml LSFT RBKT &hml LCTRL LBKT &kp BSPC
 &kp F12   &kp F11         &kp F10      &kp F9       &kp F8       &kp F7    &none &kp A        &kp F6      &kp F5      &kp F4      &kp F3      &kp F2       &kp F1
@@ -134,8 +132,7 @@
 
         mirror_default_layer {
             display-name = "DEFAULT_MIRROR";
-            bindings =     display-name = "QWERTY";
-    bindings =<
+            bindings =<
 &kp BSPC       &kp N0        &kp N9       &kp N8       &kp N7       &kp N6       &none              &kp N5       &kp N4       &kp N3       &kp N2       &kp N1        &kp DEL
 &kp END        &kp HOME      &kp RIGHT    &kp UP       &kp DOWN     &kp LEFT     &none &kp A &kp A  &kp G        &hml LALT F  &hml LGUI D  &hml LSFT S  &hml LCTRL A  &kp BSPC
 &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1 &kp PG_UP    &kp PG_DN    &trans       &none &kp A        &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &rgb_ug RGB_OFF &rgb_ug RGB_ON
