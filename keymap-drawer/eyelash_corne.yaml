@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   NUMBER:
   - $$mdi:backspace-reverse-outline$$
@@ -93,10 +93,10 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
   SYMBOL:
   - $$mdi:backspace-reverse-outline$$
@@ -142,8 +142,155 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held alternate}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
+  DEFAULT_MIRROR:
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - P
+  - O
+  - I
+  - U
+  - Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - T
+  - R
+  - E
+  - W
+  - Q
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '''', s: '"'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: L, h: RSFT}
+  - {t: K, h: LGUI}
+  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - H
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - A
+  - G
+  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: LGUI}
+  - {t: S, h: LSFT}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:alpha-w-box$$
+  - {t: /, s: '?'}
+  - {t: ., s: '>'}
+  - {t: ',', s: <}
+  - M
+  - N
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - B
+  - V
+  - C
+  - X
+  - Z
+  - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL_MIRROR}
+  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-esc$$', h: NUMBER_MIRROR}
+  - {t: '$$mdi:keyboard-esc$$', h: NUMBER_MIRROR}
+  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL_MIRROR}
+  NUMBER_MIRROR:
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '0', s: )}
+  - {t: '9', s: (}
+  - {t: '8', s: '*'}
+  - {t: '7', s: '&'}
+  - {t: '6', s: ^}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '5', s: '%'}
+  - {t: '4', s: $}
+  - {t: '3', s: '#'}
+  - {t: '2', s: '@'}
+  - {t: '1', s: '!'}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '''', s: '"'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: L, h: RSFT}
+  - {t: K, h: LGUI}
+  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - A
+  - {t: '=', s: +}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
+  - {t: \, h: LGUI, s: '|'}
+  - {t: ']', h: LSFT, s: '}'}
+  - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - F12
+  - F11
+  - F10
+  - F9
+  - F8
+  - F7
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - F6
+  - F5
+  - F4
+  - F3
+  - F2
+  - F1
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
+  SYMBOL_MIRROR:
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '0', s: )}
+  - {t: '9', s: (}
+  - {t: '8', s: '*'}
+  - {t: '7', s: '&'}
+  - {t: '6', s: ^}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '5', s: '%'}
+  - {t: '4', s: $}
+  - {t: '3', s: '#'}
+  - {t: '2', s: '@'}
+  - {t: '1', s: '!'}
+  - $$mdi:backspace-reverse-outline$$
+  - END
+  - HOME
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - A
+  - G
+  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: LGUI}
+  - {t: S, h: LSFT}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - PG UP
+  - PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - RGB OFF
+  - RGB ON
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
