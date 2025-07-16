@@ -57,7 +57,7 @@
         compatible = "zmk,behavior-hold-tap";
         flavor = "hold-preferred";
         tapping-term-ms = <5000>; // 5-second hold
-        bindings = <&sl lock 0>, <&none>; // Hold: unlock (disable lock layer), Tap: nothing
+        bindings = <&sl 0>, <&none>; // Hold: unlock (disable lock layer), Tap: nothing
     };
 
 
