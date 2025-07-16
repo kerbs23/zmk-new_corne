@@ -135,7 +135,7 @@ layers:
   - $$mdi:brightness-7$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
-  - {t: PAUSE_FOR_TRAVEL, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: PAUSE_FOR_TRAVEL, h: toggle}
   - PG DN
   - PG UP
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -331,15 +331,15 @@ layers:
   - '&unlock_combo'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '&unlock_combo', type: held}
+  - '&unlock_combo'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
