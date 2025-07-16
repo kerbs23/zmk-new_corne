@@ -57,7 +57,7 @@
         compatible = "zmk,behavior-hold-tap";
         flavor = "hold-preferred";
         tapping-term-ms = <5000>; // 5-second hold
-        bindings = <&sl 0>, <&none>; // Hold: unlock (disable lock layer), Tap: nothing
+        bindings = <&to 0>, <&none>; // Hold: unlock (disable lock layer), Tap: nothing
     };
 
 
@@ -110,7 +110,7 @@
             bindings = <
 &kp DEL        &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &none              &kp N6          &kp N7    &kp N8     &kp N9       &kp N0        &kp BSPC
 &kp BSPC       &hml LCTRL A    &hml LSFT S  &hml LGUI D  &hml LALT F  &kp G        &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
-&rgb_ug RGB_ON &rgb_ug RGB_OFF &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp C_BRI_DN &none &kp A        &sl 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
+&rgb_ug RGB_ON &rgb_ug RGB_OFF &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp C_BRI_DN &none &kp A        &to 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
                                             &lt 1 TAB    &lt 5 SPACE    &lt 2 ESC                       &lt 2 ESC &lt 5 SPACE &lt 1 TAB
             >;
             sensor-bindings = <&scroll_encoder>;
