@@ -52,20 +52,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-	        sleep_behavior: sleep_behavior {
+	        sleep_bhvr: sleep_bhvr {
             compatible = "zmk,behavior-momentary-layer";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             layer = <1>;
         };
         wake_trigger: wake_trigger {
             compatible = "zmk,behavior-momentary-layer";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             layer = <2>;
             duration-ms = <500>;
         };
         wake_final: wake_final {
             compatible = "zmk,behavior-layer-tap";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             bindings = <&to 0>;
             tapping-term-ms = <200>;
         };
@@ -116,7 +116,7 @@
             bindings = <
 &kp DEL        &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &none              &kp N6          &kp N7    &kp N8     &kp N9       &kp N0        &kp BSPC
 &kp BSPC       &hml LCTRL A    &hml LSFT S  &hml LGUI D  &hml LALT F  &kp G        &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
-&rgb_ug RGB_ON &rgb_ug RGB_OFF &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp C_BRI_DN &none &kp A        &sleep_behavior &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
+&rgb_ug RGB_ON &rgb_ug RGB_OFF &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp C_BRI_DN &none &kp A        &sleep_bhvr 6   &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
                                             &lt 1 TAB    &lt 5 SPACE    &lt 2 ESC                       &lt 2 ESC &lt 5 SPACE &lt 1 TAB
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -161,13 +161,13 @@
 	};
 
 
-
+ 
 		sleep_layer {
             display-name = "PAUSE_FOR_TRAVEL";
             bindings =<
 &none  &none  &none  &none  &none  &none      &none                 &none  &none  &none  &none  &none  &none  
 &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none  
-&none  &none  &none  &none  &none  &wake_trigger      &none  &none          &wake_trigger  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &wake_trigger 7      &none  &none          &wake_trigger 7  &none  &none  &none  &none  &none  
 &none  &none  &none             &none  &none  &none  
     >;
 			sensor-bindings = <&scroll_encoder>;
@@ -177,7 +177,7 @@
             bindings =<
 &none  &none  &none  &none  &none  &none      &none                 &none  &none  &none  &none  &none  &none  
 &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none  
-&none  &none  &none  &none  &none  &wake_final      &none  &none    &wake_final &none  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &wake_final 0      &none  &none    &wake_final 0 &none  &none  &none  &none  &none  &none  
 &none  &none  &none             &none  &none  &none  
     >;
 			sensor-bindings = <&scroll_encoder>;
