@@ -59,7 +59,7 @@
 	#binding-cells = <2>;
         flavor = "hold-preferred";
         tapping-term-ms = <5000>; // 5-second hold
-        bindings = <&to 6>, <&none>; // Hold: unlock (disable lock layer), Tap: nothing
+        bindings = <&to>, <&kp>;
     };
 
 
@@ -163,7 +163,7 @@
             bindings =<
 &none  &none  &none  &none  &none  &none      &none                 &none  &none  &none  &none  &none  &none  
 &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none  
-&none  &none  &none  &none  &none  &unlock_combo      &none  &none          &unlock_combo  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &unlock_combo 0 &none      &none  &none          &unlock_combo 0 &none  &none  &none  &none  &none  &none  
 &none  &none  &none             &none  &none  &none  
     >;
 			sensor-bindings = <&scroll_encoder>;
