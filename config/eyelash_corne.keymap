@@ -53,11 +53,15 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
+	to_0: to_0 {
+		compatible = "zmk,behavior-to-layer";
+		to-layer = <0>;
+	};
 	unlock_combo: behavior_unlock_combo {
         compatible = "zmk,behavior-hold-tap";
         flavor = "hold-preferred";
         tapping-term-ms = <5000>; // 5-second hold
-        bindings = <&to 0 &none>; // Hold: unlock (disable lock layer), Tap: nothing
+        bindings = <&to_0>, <&none>; // Hold: unlock (disable lock layer), Tap: nothing
     };
 
 
