@@ -55,6 +55,7 @@
 
 	to_0: to_0 {
 		compatible = "zmk,behavior-to-layer";
+		#binding-cells = <0>;
 		to-layer = <0>;
 	};
 	unlock_combo: behavior_unlock_combo {
