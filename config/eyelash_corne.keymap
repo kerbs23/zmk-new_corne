@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "UNDERSCORE";
             #binding-cells = <0>;
-	    bindings = <&kp SPACE>, <&kp UNDERSCORE>;
+	    bindings = <&lt 3 SPACE> <&lt 3 UNDERSCORE>;
 	    mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -109,7 +109,7 @@
 &kp GRAVE &kp N1         &kp N2         &kp N3         &kp N4          &kp N5    &none              &kp N6    &kp N7       &kp N8       &kp N9       &kp N0           &kp BSPC
 &kp BSPC &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmr RSFT DOWN  &hmr LGUI UP  &hmr LCTRL RIGHT  &hmr RALT HOME  &kp END
 &kp F1   &kp F2          &kp F3         &kp F4         &kp F5          &kp F6    &none &kp A        &kp F7    &kp F8       &kp F9       &kp F10      &kp F11          &kp F12
-                              &lt 1 TAB    &us   &lt 2 ESC                          &lt 1 TAB   &us   &lt 2 ESC
+                              &lt 1 TAB    &us 4    &lt 2 ESC                          &lt 1 TAB   &us   &lt 2 ESC
             >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -120,7 +120,7 @@
 &kp DEL        &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &none              &kp N6          &kp N7    &kp N8     &kp N9       &kp N0        &kp BSPC
 &kp BSPC  &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
 &rgb_ug RGB_OFF &rgb_ug RGB_ON &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none &kp A        &to 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
-                                            &lt 1 TAB   &us     &lt 2 ESC                     &lt 1 TAB    &us   &lt 2 ESC
+                                            &lt 1 TAB   &us 5     &lt 2 ESC                     &lt 1 TAB    &us 5    &lt 2 ESC
             >;
             sensor-bindings = <&scroll_encoder>;
         };
