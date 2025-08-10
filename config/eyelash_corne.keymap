@@ -70,7 +70,7 @@ undr: undr {
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-space_behavior : space_behavior  {
+space_behavior: space_behavior {
     compatible = "zmk,behavior-hold-tap";
     label = "SPACE_HOLD_TAP";
     #binding-cells = <2>;
