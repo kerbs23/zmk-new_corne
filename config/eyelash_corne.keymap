@@ -62,7 +62,7 @@
         bindings = <&to>, <&kp>;
     };
 
-underscore_behavior {
+undr {
     compatible = "zmk,behavior-mod-morph";
     label = "UNDERSCORE";
     #binding-cells = <0>;
@@ -77,7 +77,7 @@ space_behavior: space_behavior {
     tapping-term-ms = <200>;
     quick-tap-ms = <0>;
     flavor = "hold-preferred";
-    bindings =<&mo>,  <&underscore_behavior>;
+    bindings =<&mo>,  <&undr>;
 };
 
 
