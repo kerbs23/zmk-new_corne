@@ -77,7 +77,7 @@ space_behavior: space_behavior {
     tapping-term-ms = <200>;
     quick-tap-ms = <0>;
     flavor = "hold-preferred";
-    bindings = <&underscore_behavior>, <&mo>;
+    bindings =<&mo>,  <&underscore_behavior>;
 };
 
 
