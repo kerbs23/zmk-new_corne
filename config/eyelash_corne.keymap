@@ -69,7 +69,7 @@
 		tapping-term-ms = <200>;
  		quick-tap-ms = <0>;
   		flavor = "hold-preferred";
- 		bindings =<&mo>,  <&undr>;
+ 		bindings =<&mo>,  <&us>;
 	};
 	us: underscore_behavior {
             compatible = "zmk,behavior-mod-morph";
