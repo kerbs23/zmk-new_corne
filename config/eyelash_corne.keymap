@@ -180,9 +180,9 @@ space_behavior: space_behavior {
 		sleep_layer {
             display-name = "PAUSE_FOR_TRAVEL";
             bindings =<
-&none  &none  &none  &none  &none  &none      &none                 &none  &none  &none  &none  &none  &none  
-&none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none  
-&none  &none  &none  &none  &none  &none &none      &none  &none          &unlock_combo 0 &none  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &none      &none                 &none           &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &none      &none  &none  &none   &none           &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &none      &none  &none          &unlock_combo 0 &none  &none  &none  &none  &none  
 &none  &none  &none             &none  &none  &none  
     >;
 			sensor-bindings = <&scroll_encoder>;
