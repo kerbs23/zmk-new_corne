@@ -15,19 +15,19 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: LSFT}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: LGUI}
-  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: LSFT}
   - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - A
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: J, h: LSFT}
   - {t: K, h: LGUI}
-  - {t: L, h: RSFT}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '''', s: '"'}
   - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
@@ -44,13 +44,13 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR}
+  - '&space_behavior'
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
+  - '&space_behavior'
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   NUMBER:
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -64,20 +64,20 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
-  - {t: ']', h: LSFT, s: '}'}
-  - {t: \, h: LGUI, s: '|'}
-  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
-  - {t: '=', s: +}
+  - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: '=', h: LGUI, s: +}
+  - {t: '[', h: LSFT, s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - A
-  - {t: '`', s: '~'}
-  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: K, h: LGUI}
-  - {t: L, h: RSFT}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
-  - {t: '''', s: '"'}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:arrow-down-bold$$', h: RSFT}
+  - {t: '$$mdi:arrow-up-bold$$', h: LGUI}
+  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: HOME, h: '$$mdi:apple-keyboard-option$$'}
+  - END
   - F1
   - F2
   - F3
@@ -93,11 +93,11 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR}
+  - '&space_behavior'
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
+  - '&space_behavior'
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   SYMBOL:
   - $$mdi:backspace-reverse-outline$$
   - {t: '1', s: '!'}
@@ -113,11 +113,11 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: LSFT}
-  - {t: D, h: LGUI}
-  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
-  - G
+  - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: '=', h: LGUI, s: +}
+  - {t: '[', h: LSFT, s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - A
@@ -127,12 +127,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - END
-  - RGB ON
   - RGB OFF
-  - $$mdi:volume-high$$
+  - RGB ON
   - $$mdi:volume-low$$
-  - $$mdi:brightness-5$$
+  - $$mdi:volume-high$$
   - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - {t: PAUSE_FOR_TRAVEL, h: toggle}
@@ -142,11 +142,11 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR}
+  - '&space_behavior'
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held}
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held alternate}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER, type: held alternate}
+  - '&space_behavior'
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL, type: held alternate}
   DEFAULT_MIRROR:
   - {t: '$$mdi:backspace$$', type: backspace}
   - P
@@ -191,10 +191,10 @@ layers:
   - Z
   - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL_MIRROR}
-  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR}
   - {t: '$$mdi:keyboard-esc$$', h: NUMBER_MIRROR}
   - {t: '$$mdi:keyboard-esc$$', h: NUMBER_MIRROR}
-  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: DEFAULT_MIRROR}
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL_MIRROR}
   NUMBER_MIRROR:
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -239,12 +239,12 @@ layers:
   - F3
   - F2
   - F1
-  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held}
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held alternate}
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held alternate}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR, type: held alternate}
-  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER_MIRROR}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR}
   SYMBOL_MIRROR:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '0', s: )}
@@ -289,11 +289,11 @@ layers:
   - RGB OFF
   - RGB ON
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR, type: held}
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held}
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR, type: held alternate}
-  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL_MIRROR, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL_MIRROR}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER_MIRROR, type: held alternate}
   PAUSE_FOR_TRAVEL:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -328,7 +328,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&unlock_combo'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&unlock_combo'
