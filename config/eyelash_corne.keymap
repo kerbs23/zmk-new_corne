@@ -62,7 +62,7 @@
         bindings = <&to>, <&kp>;
     };
 
-undr {
+undr: undr {
     compatible = "zmk,behavior-mod-morph";
     label = "UNDERSCORE";
     #binding-cells = <0>;
@@ -70,6 +70,15 @@ undr {
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
+space_behavior: space_behavior {
+    compatible = "zmk,behavior-hold-tap";
+    label = "SPACE_HOLD_TAP";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <0>;
+    flavor = "hold-preferred";
+    bindings =<&mo>,  <&undr>;
+};
 
 
 
@@ -101,7 +110,7 @@ undr {
 &kp DEL           &kp Q         &kp W        &kp E        &kp R        &kp T       &none               &kp Y        &kp U        &kp I        &kp O         &kp P            &kp BSPC
 &kp BSPC          &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSFT F  &kp G       &none &kp A &kp A   &kp H        &hmr LSFT J  &hmr LGUI K  &hmr LCTRL L   &hmr LALT SEMI  &kp SQT
 &mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp V        &kp B       &none &kp A         &kp N        &kp M        &kp COMMA    &kp DOT       &kp FSLH         &caps_word
-                             &lt 1 TAB    &undr    &lt 2 ESC                                            &lt 1 TAB     &undr   &lt 2 ESC
+                             &lt 1 TAB    &space_behavior    &lt 2 ESC                                            &lt 1 TAB     &space_behavior   &lt 2 ESC
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -112,7 +121,7 @@ undr {
 &kp GRAVE &kp N1         &kp N2         &kp N3         &kp N4          &kp N5    &none              &kp N6    &kp N7       &kp N8       &kp N9       &kp N0           &kp BSPC
 &kp BSPC &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmr RSFT DOWN  &hmr LGUI UP  &hmr LCTRL RIGHT  &hmr RALT HOME  &kp END
 &kp F1   &kp F2          &kp F3         &kp F4         &kp F5          &kp F6    &none &kp A        &kp F7    &kp F8       &kp F9       &kp F10      &kp F11          &kp F12
-                              &lt 1 TAB     &undr   &lt 2 ESC                          &lt 1 TAB     &undr  &lt 2 ESC
+                              &lt 1 TAB     &space_behavior   &lt 2 ESC                          &lt 1 TAB     &space_behavior  &lt 2 ESC
             >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -123,7 +132,7 @@ undr {
 &kp DEL        &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &none              &kp N6          &kp N7    &kp N8     &kp N9       &kp N0        &kp BSPC
 &kp BSPC  &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
 &rgb_ug RGB_OFF &rgb_ug RGB_ON &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none &kp A        &to 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
-                                            &lt 1 TAB   &undr    &lt 2 ESC                     &lt 1 TAB       &undr   &lt 2 ESC
+                                            &lt 1 TAB   &space_behavior    &lt 2 ESC                     &lt 1 TAB       &space_behavior   &lt 2 ESC
             >;
             sensor-bindings = <&scroll_encoder>;
         };
