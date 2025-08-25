@@ -142,9 +142,9 @@
         mirror_default_layer {
             display-name = "DEFAULT_MIRROR";
             bindings = <
-&kp BSPC      &kp P           &kp O       &kp I       &kp U        &kp Y       &none               &kp T        &kp R        &kp E        &kp W         &kp Q         &kp DEL
-&kp SQT       &hmr RCTRL SEMI &hmr RSFT L &hmr LGUI K &hmr RALT J  &kp H       &none &kp A &kp A   &kp G        &hml LALT F  &hml LGUI D  &hml LSFT S   &hml LCTRL A  &kp BSPC
-&caps_word    &kp FSLH        &kp DOT     &kp COMMA   &kp M        &kp N       &none &kp A         &kp B        &kp V        &kp C        &kp X         &kp Z         &mt LSHFT RETURN
+&kp BSPC      &kp SEMI        &kp Y       &kp U       &kp L        &kp J       &none               &kp B        &kp P        &kp F        &kp W         &kp Q         &kp DEL
+&kp SQT       &hmr RCTRL O    &hmr RSFT I &hmr LGUI E &hmr RALT N  &kp M       &none &kp A &kp A   &kp G        &hml LALT T  &hml LGUI S  &hml LSFT R   &hml LCTRL A  &kp BSPC
+&caps_word    &kp FSLH        &kp DOT     &kp COMMA   &kp H        &kp K       &none &kp A         &kp V        &kp D        &kp C        &kp X         &kp Z         &mt LSHFT RETURN
                              &lt 5 TAB    &lt 3 SPACE    &lt 4 ESC                                           &lt 4 ESC    &lt 3 SPACE    &lt 5 TAB
     >;
 			sensor-bindings = <&scroll_encoder>;
@@ -154,8 +154,8 @@
         mirror_lower_layer {
             display-name = "NUMBER_MIRROR";
             bindings = <
-&kp BSPC  &kp N0          &kp N9       &kp N8       &kp N7       &kp N6    &none              &kp N5      &kp N4      &kp N3      &kp N2      &kp N1      &kp DEL
-&kp SQT   &hmr RCTRL SEMI &hmr RSFT L  &hmr LGUI K  &hmr RALT J  &kp GRAVE &none &kp A &kp A  &kp EQUAL   &hml LALT MINUS &hml LGUI BSLH &hml LSFT RBKT &hml LCTRL LBKT &kp BSPC
+&kp GRAVE  &kp N0          &kp N9       &kp N8       &kp N7       &kp N6    &none              &kp N5      &kp N4      &kp N3      &kp N2      &kp N1      &kp DEL
+&kp END   &hmr RCTRL HOME &hmr RSFT RIGHT  &hmr LGUI UP  &hmr RALT DOWN  &kp LEFT &none &kp A &kp A  &kp RBKT    &hml LALT LBKT &hml LGUI EQUAL &hml LSFT MINUS &hml LCTRL BSLH &kp BSPC
 &kp F12   &kp F11         &kp F10      &kp F9       &kp F8       &kp F7    &none &kp A        &kp F6      &kp F5      &kp F4      &kp F3      &kp F2       &kp F1
                              &lt 4 TAB    &lt 5 SPACE    &lt 5 ESC                          &lt 5 ESC    &lt 4 SPACE    &lt 4 TAB
     >;
@@ -167,7 +167,7 @@
             display-name = "SYMBOL_MIRROR";
             bindings =<
 &kp BSPC       &kp N0        &kp N9       &kp N8       &kp N7       &kp N6       &none              &kp N5       &kp N4       &kp N3       &kp N2       &kp N1        &kp DEL
-&kp END        &kp HOME      &kp RIGHT    &kp UP       &kp DOWN     &kp LEFT     &none &kp A &kp A  &kp G        &hml LALT F  &hml LGUI D  &hml LSFT S  &hml LCTRL A  &kp BSPC
+&kp END        &kp HOME      &kp RIGHT    &kp UP       &kp DOWN     &kp LEFT     &none &kp A &kp A  &kp RBKT    &hml LALT LBKT &hml LGUI EQUAL &hml LSFT MINUS &hml LCTRL BSLH &kp BSPC
 &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0 &kp PG_UP    &kp PG_DN    &trans       &none &kp A        &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &rgb_ug RGB_OFF &rgb_ug RGB_ON
                                             &lt 4 TAB    &lt 5 SPACE    &lt 5 ESC                       &lt 5 ESC    &lt 5 SPACE    &lt 4 TAB
     >;
