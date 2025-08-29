@@ -108,7 +108,7 @@
 &kp DEL           &kp Q         &kp W        &kp F        &kp P        &kp B       &none               &kp J        &kp L        &kp U        &kp Y          &kp SEMI        &kp BSPC
 &kp BSPC          &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSFT T  &kp G       &none &kp A &kp A   &kp M        &hmr LSFT N  &hmr LGUI E  &hmr LCTRL I   &hmr LALT O     &kp SQT
 &mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp D        &kp V       &none &kp A         &kp K        &kp H        &kp COMMA    &kp DOT        &kp FSLH        &caps_word
-                             &lt 1 TAB    &spc 3 &none     &lt 2 ESC                                            &lt 1 TAB     &spc 3 &none    &lt 2 ESC
+                             &lt 2 ESC  &lt 1 TAB    &spc 3 &none                                           &spc 3 &none    &lt 2 ESC    
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -119,7 +119,7 @@
 &kp GRAVE &kp N1         &kp N2         &kp N3         &kp N4          &kp N5    &none              &kp N6    &kp N7       &kp N8       &kp N9       &kp N0           &kp BSPC
 &kp BSPC &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmr RSFT DOWN  &hmr LGUI UP  &hmr LCTRL RIGHT  &hmr RALT HOME  &kp END
 &kp F1   &kp F2          &kp F3         &kp F4         &kp F5          &kp F6    &none &kp A        &kp F7    &kp F8       &kp F9       &kp F10      &kp F11          &kp F12
-                              &lt 1 TAB     &spc 3 &none    &lt 2 ESC                          &lt 1 TAB     &spc 3 &none   &lt 2 ESC
+                                &lt 2 ESC  &lt 1 TAB     &spc 3 &none                           &spc 3 &none   &lt 2 ESC  &lt 1 TAB  
             >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -131,7 +131,7 @@
 &kp BSPC  &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
 &rgb_ug RGB_OFF &rgb_ug RGB_ON &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none &kp A        &to 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
 			
-                                            &lt 1 TAB   &spc 3 &none     &lt 2 ESC                     &lt 1 TAB       &spc 3 &none    &lt 2 ESC
+                                             &lt 2 ESC  &lt 1 TAB   &spc 3 &none                           &spc 3 &none    &lt 2 ESC &lt 1 TAB  
             >;
             sensor-bindings = <&scroll_encoder>;
         };
