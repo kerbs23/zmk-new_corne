@@ -39,7 +39,7 @@
             key-positions = <9 24>;
             bindings = &sk LSHFT;
         };
-    }
+    };
     behaviors {
         hmf: home_row_mod_fast {
             compatible = "zmk,behavior-hold-tap";
