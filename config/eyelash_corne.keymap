@@ -27,21 +27,34 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_tp_sft {
+            timeout-ms = <100>;
+            key-positions = <5 18>;
+            bindings = &sk LSHFT;
+        };
+        combo_ln_sft {
+            timeout-ms = <100>;
+            key-positions = <9 24>;
+            bindings = &sk LSHFT;
+        };
+    }
     behaviors {
-        hml: home_row_mod_left {
+        hmf: home_row_mod_fast {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
         };
-        hmr: home_row_mod_right {
+        hms: home_row_mod_slow {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
@@ -106,7 +119,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp DEL           &kp Q         &kp W        &kp F        &kp P        &kp B       &none               &kp J        &kp L        &kp U        &kp Y          &kp SEMI        &kp BSPC
-&kp BSPC          &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSFT T  &kp G       &none &kp A &kp A   &kp M        &hmr LSFT N  &hmr LGUI E  &hmr LCTRL I   &hmr LALT O     &kp SQT
+&kp BSPC          &hms LALT A  &hms LCTRL R  &hms LGUI S  &hmf LSFT T  &kp G       &none &kp A &kp A   &kp M        &hmf LSFT N  &hms LGUI E  &hms LCTRL I   &hms LALT O     &kp SQT
 &mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp D        &kp V       &none &kp A         &kp K        &kp H        &kp COMMA    &kp DOT        &kp FSLH        &caps_word
                              &lt 2 ESC  &lt 1 TAB    &spc 3 &none                                           &spc 3 &none    &lt 2 ESC    
             >;
@@ -117,7 +130,7 @@
             display-name = "NUMBER";
             bindings = <
 &kp GRAVE &kp N1         &kp N2         &kp N3         &kp N4          &kp N5    &none              &kp N6    &kp N7       &kp N8       &kp N9       &kp N0           &kp BSPC
-&kp BSPC &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmr RSFT DOWN  &hmr LGUI UP  &hmr LCTRL RIGHT  &hmr RALT HOME  &kp END
+&kp BSPC &hms LALT BSLH &hms LCTRL MINUS &hms LGUI EQUAL &hmf LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmf RSFT DOWN  &hms LGUI UP  &hms LCTRL RIGHT  &hms RALT HOME  &kp END
 &kp F1   &kp F2          &kp F3         &kp F4         &kp F5          &kp F6    &none &kp A        &kp F7    &kp F8       &kp F9       &kp F10      &kp F11          &kp F12
                                 &lt 2 ESC  &lt 1 TAB     &spc 3 &none                           &spc 3 &none   &lt 2 ESC  &lt 1 TAB  
             >;
@@ -128,7 +141,7 @@
             display-name = "SYMBOL";
             bindings = <
 &kp DEL        &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &none              &kp N6          &kp N7    &kp N8     &kp N9       &kp N0        &kp BSPC
-&kp BSPC  &hml LALT BSLH &hml LCTRL MINUS &hml LGUI EQUAL &hml LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
+&kp BSPC  &hms LALT BSLH &hms LCTRL MINUS &hms LGUI EQUAL &hmf LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
 &rgb_ug RGB_OFF &rgb_ug RGB_ON &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none &kp A        &to 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
 			
                                              &lt 2 ESC  &lt 1 TAB   &spc 3 &none                           &spc 3 &none    &lt 2 ESC &lt 1 TAB  
@@ -143,7 +156,7 @@
             display-name = "DEFAULT_MIRROR";
             bindings = <
 &kp BSPC      &kp SEMI        &kp Y       &kp U       &kp L        &kp J       &none               &kp B        &kp P        &kp F        &kp W         &kp Q         &kp DEL
-&kp SQT       &hmr RCTRL O    &hmr RSFT I &hmr LGUI E &hmr RALT N  &kp M       &none &kp A &kp A   &kp G        &hml LALT T  &hml LGUI S  &hml LSFT R   &hml LCTRL A  &kp BSPC
+&kp SQT       &hms RCTRL O    &hmf RSFT I &hms LGUI E &hms RALT N  &kp M       &none &kp A &kp A   &kp G        &hms LALT T  &hms LGUI S  &hmf LSFT R   &hms LCTRL A  &kp BSPC
 &caps_word    &kp FSLH        &kp DOT     &kp COMMA   &kp H        &kp K       &none &kp A         &kp V        &kp D        &kp C        &kp X         &kp Z         &mt LSHFT RETURN
                              &lt 5 TAB    &lt 3 SPACE    &lt 4 ESC                                           &lt 4 ESC    &lt 3 SPACE    &lt 5 TAB
     >;
@@ -155,7 +168,7 @@
             display-name = "NUMBER_MIRROR";
             bindings = <
 &kp GRAVE  &kp N0          &kp N9       &kp N8       &kp N7       &kp N6    &none              &kp N5      &kp N4      &kp N3      &kp N2      &kp N1      &kp DEL
-&kp END   &hmr RCTRL HOME &hmr RSFT RIGHT  &hmr LGUI UP  &hmr RALT DOWN  &kp LEFT &none &kp A &kp A  &kp RBKT    &hml LALT LBKT &hml LGUI EQUAL &hml LSFT MINUS &hml LCTRL BSLH &kp BSPC
+&kp END   &hms RCTRL HOME &hmf RSFT RIGHT  &hms LGUI UP  &hms RALT DOWN  &kp LEFT &none &kp A &kp A  &kp RBKT    &hms LALT LBKT &hms LGUI EQUAL &hmf LSFT MINUS &hms LCTRL BSLH &kp BSPC
 &kp F12   &kp F11         &kp F10      &kp F9       &kp F8       &kp F7    &none &kp A        &kp F6      &kp F5      &kp F4      &kp F3      &kp F2       &kp F1
                              &lt 4 TAB    &lt 5 SPACE    &lt 5 ESC                          &lt 5 ESC    &lt 4 SPACE    &lt 4 TAB
     >;
@@ -167,7 +180,7 @@
             display-name = "SYMBOL_MIRROR";
             bindings =<
 &kp BSPC       &kp N0        &kp N9       &kp N8       &kp N7       &kp N6       &none              &kp N5       &kp N4       &kp N3       &kp N2       &kp N1        &kp DEL
-&kp END        &kp HOME      &kp RIGHT    &kp UP       &kp DOWN     &kp LEFT     &none &kp A &kp A  &kp RBKT    &hml LALT LBKT &hml LGUI EQUAL &hml LSFT MINUS &hml LCTRL BSLH &kp BSPC
+&kp END        &kp HOME      &kp RIGHT    &kp UP       &kp DOWN     &kp LEFT     &none &kp A &kp A  &kp RBKT    &hms LALT LBKT &hms LGUI EQUAL &hmf LSFT MINUS &hms LCTRL BSLH &kp BSPC
 &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0 &kp PG_UP    &kp PG_DN    &trans       &none &kp A        &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &rgb_ug RGB_OFF &rgb_ug RGB_ON
                                             &lt 4 TAB    &lt 5 SPACE    &lt 5 ESC                       &lt 5 ESC    &lt 5 SPACE    &lt 4 TAB
     >;
