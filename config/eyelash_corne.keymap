@@ -28,14 +28,13 @@
 
 / {
     combos {
+        compatible = "zmk,combos";
         combo_tp_sft {
-            compatible = "zmk,combos";
             timeout-ms = <100>;
             key-positions = <5 18>;
             bindings = <&sk LSHFT>;
         };
         combo_ln_sft {
-            compatible = "zmk,combos";
             timeout-ms = <1000>;
             key-positions = <1 2>;
             bindings = <&sk LSHFT>;
