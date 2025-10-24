@@ -36,8 +36,8 @@
         };
         combo_ln_sft {
             compatible = "zmk,combos";
-            timeout-ms = <100>;
-            key-positions = <9 24>;
+            timeout-ms = <1000>;
+            key-positions = <1 2>;
             bindings = <&sk LSHFT>;
         };
     };
@@ -119,7 +119,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp DEL           &kp Q         &kp W        &kp F        &kp P        &kp B       &none               &kp J        &kp L        &kp U        &kp Y          &kp SEMI        &kp BSPC
+&kp DEL           &kp Q         &kp W        &kp F        &kp P        &kp B       &none               &kp J        &kp L        &kp U        &kp Y          &kp SEMI        &sk LSHFT
 &kp BSPC          &hms LALT A  &hms LCTRL R  &hms LGUI S  &hmf LSFT T  &kp G       &none &kp A &kp A   &kp M        &hmf LSFT N  &hms LGUI E  &hms LCTRL I   &hms LALT O     &kp SQT
 &mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp D        &kp V       &none &kp A         &kp K        &kp H        &kp COMMA    &kp DOT        &kp FSLH        &caps_word
                              &lt 2 ESC  &lt 1 TAB    &spc 3 &none                                           &spc 3 &none    &lt 2 ESC    
