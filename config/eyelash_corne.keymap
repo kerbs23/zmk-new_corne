@@ -41,6 +41,10 @@
             key-positions = <8 23>;
             bindings = <&sk LSHFT>;
         };
+        softoff {
+            bindings = <&soft_off>;
+            key-positions = <1 15 29>;
+        };
     };
     behaviors {
         hmf: home_row_mod_fast {
@@ -113,14 +117,6 @@
 	};
 
 
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <1 15 29>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
