@@ -32,20 +32,48 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_tp_sft {
-            timeout-ms = <100>;
-            key-positions = <4 17>;
-            bindings = <&sk LSHFT>;
-        };
-        combo_ln_sft {
-            timeout-ms = <1000>;
-            key-positions = <8 23>;
-            bindings = <&sk LSHFT>;
-        };
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        // Top + middle row -> number (top key's number-layer binding)
+        combo_num_1 { timeout-ms = <100>; key-positions = <1 14>;  bindings = <&kp N1>; };  // q + a
+        combo_num_2 { timeout-ms = <100>; key-positions = <2 15>;  bindings = <&kp N2>; };  // w + r
+        combo_num_3 { timeout-ms = <100>; key-positions = <3 16>;  bindings = <&kp N3>; };  // f + s
+        combo_num_4 { timeout-ms = <100>; key-positions = <4 17>;  bindings = <&kp N4>; };  // p + t
+        combo_num_5 { timeout-ms = <100>; key-positions = <5 18>;  bindings = <&kp N5>; };  // b + g
+        combo_num_6 { timeout-ms = <100>; key-positions = <7 22>;  bindings = <&kp N6>; };  // j + m
+        combo_num_7 { timeout-ms = <100>; key-positions = <8 23>;  bindings = <&kp N7>; };  // l + n
+        combo_num_8 { timeout-ms = <100>; key-positions = <9 24>;  bindings = <&kp N8>; };  // u + e
+        combo_num_9 { timeout-ms = <100>; key-positions = <10 25>; bindings = <&kp N9>; };  // y + i
+        combo_num_0 { timeout-ms = <100>; key-positions = <11 26>; bindings = <&kp N0>; };  // ; + o
+
+        // Middle + bottom row -> middle key's symbol-layer (alt) binding
+        combo_sym_bslh  { timeout-ms = <100>; key-positions = <14 29>; bindings = <&kp BSLH>;  };  // a + z -> \
+        combo_sym_minus { timeout-ms = <100>; key-positions = <15 30>; bindings = <&kp MINUS>; };  // r + x -> -
+        combo_sym_equal { timeout-ms = <100>; key-positions = <16 31>; bindings = <&kp EQUAL>; };  // s + c -> =
+        combo_sym_lbkt  { timeout-ms = <100>; key-positions = <17 32>; bindings = <&kp LBKT>;  };  // t + d -> [
+        combo_sym_rbkt  { timeout-ms = <100>; key-positions = <18 33>; bindings = <&kp RBKT>;  };  // g + v -> ]
+        combo_sym_left  { timeout-ms = <100>; key-positions = <22 36>; bindings = <&kp LEFT>;  };  // m + k -> left
+        combo_sym_down  { timeout-ms = <100>; key-positions = <23 37>; bindings = <&kp DOWN>;  };  // n + h -> down
+        combo_sym_up    { timeout-ms = <100>; key-positions = <24 38>; bindings = <&kp UP>;    };  // e + , -> up
+        combo_sym_right { timeout-ms = <100>; key-positions = <25 39>; bindings = <&kp RIGHT>; };  // i + . -> right
+        combo_sym_home  { timeout-ms = <100>; key-positions = <26 40>; bindings = <&kp HOME>;  };  // o + / -> home
+        combo_sym_end   { timeout-ms = <100>; key-positions = <27 41>; bindings = <&kp END>;   };  // ' + caps_word -> end
+
+        // Extra combos
+        combo_bspc  { timeout-ms = <100>; key-positions = <3 4>;    bindings = <&kp BSPC>; };    // f + p -> backspace
+        combo_bspc_pb { timeout-ms = <100>; key-positions = <4 5>;  bindings = <&kp BSPC>; };    // p + b -> backspace
+        combo_del   { timeout-ms = <100>; key-positions = <2 3>;    bindings = <&kp DEL>; };     // w + f -> delete
+        combo_grv   { timeout-ms = <100>; key-positions = <2 1>;    bindings = <&kp GRAVE>; };   // w + q -> grave
+        combo_enter { timeout-ms = <100>; key-positions = <8 9>;    bindings = <&kp RETURN>; };  // l + u -> enter
+        combo_enter_jl { timeout-ms = <100>; key-positions = <7 8>; bindings = <&kp RETURN>; };  // j + l -> enter
+        combo_sqt   { timeout-ms = <100>; key-positions = <10 9>;   bindings = <&kp SQT>; };     // y + u -> '
+        combo_home  { timeout-ms = <100>; key-positions = <37 38>;  bindings = <&kp HOME>; };    // h + , -> home
+        combo_end   { timeout-ms = <100>; key-positions = <39 38>;  bindings = <&kp END>; };     // . + , -> end
+        combo_shift_tg { timeout-ms = <100>; key-positions = <17 18>; bindings = <&sk LSHFT>; }; // t + g -> sticky shift
+        combo_shift_nm { timeout-ms = <100>; key-positions = <23 22>; bindings = <&sk LSHFT>; }; // n + m -> sticky shift
     };
     behaviors {
         hmf: home_row_mod_fast {
@@ -126,9 +154,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp DEL           &kp Q         &kp W        &kp F        &kp P        &kp B       &none               &kp J        &kp L        &kp U        &kp Y          &kp SEMI        &sk LSHFT
-&kp BSPC          &hms LALT A  &hms LCTRL R  &hms LGUI S  &hmf LSFT T  &kp G       &none &kp A &kp A   &kp M        &hmf LSFT N  &hms LGUI E  &hms LCTRL I   &hms LALT O     &kp SQT
-&mt LSHFT RETURN  &kp Z         &kp X        &kp C        &kp D        &kp V       &none &kp A         &kp K        &kp H        &kp COMMA    &kp DOT        &kp FSLH        &caps_word
+&none &kp Q         &kp W        &kp F        &kp P        &kp B       &none               &kp J        &kp L        &kp U        &kp Y          &kp SEMI        &none
+&none &hms LALT A  &hms LCTRL R  &hms LGUI S  &hmf LSFT T  &kp G       &none &kp A &kp A   &kp M        &hmf LSFT N  &hms LGUI E  &hms LCTRL I   &hms LALT O     &none
+&none &kp Z         &kp X        &kp C        &kp D        &kp V       &none &kp A         &kp K        &kp H        &kp COMMA    &kp DOT        &kp FSLH        &none
                              &lt 2 ESC  &lt 1 TAB    &spc 3 &none                                           &spc 3 &none    &lt 2 ESC  &lt 1 TAB
             >;
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -137,9 +165,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp GRAVE &kp N1         &kp N2         &kp N3         &kp N4          &kp N5    &none              &kp N6    &kp N7       &kp N8       &kp N9       &kp N0           &kp BSPC
-&kp BSPC &hms LALT BSLH &hms LCTRL MINUS &hms LGUI EQUAL &hmf LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmf RSFT DOWN  &hms LGUI UP  &hms LCTRL RIGHT  &hms RALT HOME  &kp END
-&kp F1   &kp F2          &kp F3         &kp F4         &kp F5          &kp F6    &none &kp A        &kp F7    &kp F8       &kp F9       &kp F10      &kp F11          &kp F12
+&none &kp N1         &kp N2         &kp N3         &kp N4          &kp N5    &none              &kp N6    &kp N7       &kp N8       &kp N9       &kp N0           &none
+&none &hms LALT BSLH &hms LCTRL MINUS &hms LGUI EQUAL &hmf LSFT LBKT &kp RBKT &none &kp A &kp A  &kp LEFT  &hmf RSFT DOWN  &hms LGUI UP  &hms LCTRL RIGHT  &hms RALT HOME  &none
+&none &kp F2          &kp F3         &kp F4         &kp F5          &kp F6    &none &kp A        &kp F7    &kp F8       &kp F9       &kp F10      &kp F11          &none
                                 &lt 2 ESC  &lt 1 TAB     &spc 3 &none                           &spc 3 &none   &lt 2 ESC  &lt 1 TAB  
             >;
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -149,7 +177,7 @@
             display-name = "SYMBOL";
             bindings = <
 &rgb_ug RGB_ON        &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &none              &kp N6          &kp N7    &kp N8     &kp N9       &kp N0        &bt BT_CLR
-&bt BT_NXT  &hms LALT BSLH &hms LCTRL MINUS &hms LGUI EQUAL &hmf LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &kp END
+&none  &hms LALT BSLH &hms LCTRL MINUS &hms LGUI EQUAL &hmf LSFT LBKT &kp RBKT  &none &kp A &kp A  &kp LEFT        &kp DOWN  &kp UP     &kp RIGHT    &kp HOME      &none
 &rgb_ug RGB_OFF &kp GRAVE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none &kp A        &to 6           &kp PG_DN &kp PG_UP  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2
 			
                                              &lt 2 ESC  &lt 1 TAB   &spc 3 &none                           &spc 3 &none    &lt 2 ESC &lt 1 TAB  
@@ -197,7 +225,7 @@
 
 
  
-		sleep_layer {
+	sleep_layer {
             display-name = "PAUSE_FOR_TRAVEL";
             bindings =<
 &none  &none  &none  &none  &none  &none      &none                 &none           	  &none  &none  &none  &none  &none  
