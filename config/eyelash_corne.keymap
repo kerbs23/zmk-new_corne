@@ -65,10 +65,12 @@
         // Extra combos
         combo_bspc  { timeout-ms = <100>; key-positions = <3 4>;    bindings = <&kp BSPC>; };    // f + p -> backspace
         combo_bspc_pb { timeout-ms = <100>; key-positions = <4 5>;  bindings = <&kp BSPC>; };    // p + b -> backspace
+        combo_bspc_jl { timeout-ms = <100>; key-positions = <7 8>; bindings = <&kp BSPC>; };  // j + l -> backspace
         combo_del   { timeout-ms = <100>; key-positions = <2 3>;    bindings = <&kp DEL>; };     // w + f -> delete
         combo_grv   { timeout-ms = <100>; key-positions = <2 1>;    bindings = <&kp GRAVE>; };   // w + q -> grave
         combo_enter { timeout-ms = <100>; key-positions = <8 9>;    bindings = <&kp RETURN>; };  // l + u -> enter
-        combo_enter_jl { timeout-ms = <100>; key-positions = <7 8>; bindings = <&kp RETURN>; };  // j + l -> enter
+        combo_enter_dv { timeout-ms = <100>; key-positions = <32 33>; bindings = <&kp RETURN>; };  // d + v -> enter
+        combo_enter_kh { timeout-ms = <100>; key-positions = <37 38>; bindings = <&kp RETURN>; };  // k + h -> enter
         combo_sqt   { timeout-ms = <100>; key-positions = <10 9>;   bindings = <&kp SQT>; };     // y + u -> '
         combo_home  { timeout-ms = <100>; key-positions = <37 38>;  bindings = <&kp HOME>; };    // h + , -> home
         combo_end   { timeout-ms = <100>; key-positions = <39 38>;  bindings = <&kp END>; };     // . + , -> end
